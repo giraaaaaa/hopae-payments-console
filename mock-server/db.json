@@ -1,0 +1,2464 @@
+{
+  "transactions_sandbox": [
+    {
+      "id": "txn_test_000001",
+      "amount": 50000,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_test_0001",
+        "name": "Test Customer",
+        "email": "test@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "9995",
+        "exp_month": 8,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-22T08:16:18.209Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-22T08:16:20.209Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00100"
+      },
+      "created_at": "2026-05-22T08:16:18.209Z"
+    },
+    {
+      "id": "txn_test_000002",
+      "amount": 1000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0007",
+        "name": "Internal QA",
+        "email": "internal.qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0005",
+        "exp_month": 3,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-21T08:08:18.223Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-21T08:08:20.223Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-21T08:08:22.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00101"
+      },
+      "created_at": "2026-05-21T08:08:18.223Z"
+    },
+    {
+      "id": "txn_test_000003",
+      "amount": 2000,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_test_0001",
+        "name": "Test Customer",
+        "email": "test@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "9995",
+        "exp_month": 1,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-20T08:21:18.223Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-20T08:21:20.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00102"
+      },
+      "created_at": "2026-05-20T08:21:18.223Z"
+    },
+    {
+      "id": "txn_test_000004",
+      "amount": 10000,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_test_0006",
+        "name": "Charlie Dev",
+        "email": "charlie.dev@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "4242",
+        "exp_month": 10,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-19T08:00:18.223Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-19T08:00:20.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00103"
+      },
+      "created_at": "2026-05-19T08:00:18.223Z"
+    },
+    {
+      "id": "txn_test_000005",
+      "amount": 1500,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0004",
+        "name": "Alice Tester",
+        "email": "alice.tester@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "9995",
+        "exp_month": 2,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-18T07:47:18.223Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-18T07:47:21.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00104",
+        "failure_reason": "insufficient_funds"
+      },
+      "created_at": "2026-05-18T07:47:18.223Z"
+    },
+    {
+      "id": "txn_test_000006",
+      "amount": 1000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0002",
+        "name": "Demo User",
+        "email": "demo+1@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "0341",
+        "exp_month": 1,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-17T08:17:18.223Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-17T08:17:20.223Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-17T08:17:22.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00105"
+      },
+      "created_at": "2026-05-17T08:17:18.223Z"
+    },
+    {
+      "id": "txn_test_000007",
+      "amount": 2000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0002",
+        "name": "Demo User",
+        "email": "demo+1@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "0341",
+        "exp_month": 9,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-16T08:14:18.223Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-16T08:14:21.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00106",
+        "failure_reason": "authentication_required"
+      },
+      "created_at": "2026-05-16T08:14:18.223Z"
+    },
+    {
+      "id": "txn_test_000008",
+      "amount": 1000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0007",
+        "name": "Internal QA",
+        "email": "internal.qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "9995",
+        "exp_month": 11,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-15T08:30:18.223Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-15T08:30:21.223Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00107",
+        "failure_reason": "authentication_required"
+      },
+      "created_at": "2026-05-15T08:30:18.223Z"
+    },
+    {
+      "id": "txn_test_000009",
+      "amount": 10000,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_test_0007",
+        "name": "Internal QA",
+        "email": "internal.qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "4242",
+        "exp_month": 2,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-14T07:36:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-14T07:36:20.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00108"
+      },
+      "created_at": "2026-05-14T07:36:18.224Z"
+    },
+    {
+      "id": "txn_test_000010",
+      "amount": 2000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0003",
+        "name": "QA Account",
+        "email": "qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "0005",
+        "exp_month": 7,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-13T07:53:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-13T07:53:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-13T07:53:22.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00109"
+      },
+      "created_at": "2026-05-13T07:53:18.224Z"
+    },
+    {
+      "id": "txn_test_000011",
+      "amount": 1500,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0006",
+        "name": "Charlie Dev",
+        "email": "charlie.dev@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "0005",
+        "exp_month": 11,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-12T08:14:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-12T08:14:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-12T08:14:22.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00110"
+      },
+      "created_at": "2026-05-12T08:14:18.224Z"
+    },
+    {
+      "id": "txn_test_000012",
+      "amount": 1000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0005",
+        "name": "Bob Sandbox",
+        "email": "bob+sandbox@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0005",
+        "exp_month": 1,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-11T08:24:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-11T08:24:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-11T08:24:22.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00111"
+      },
+      "created_at": "2026-05-11T08:24:18.224Z"
+    },
+    {
+      "id": "txn_test_000013",
+      "amount": 5000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0005",
+        "name": "Bob Sandbox",
+        "email": "bob+sandbox@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "0341",
+        "exp_month": 10,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-10T08:20:18.224Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-10T08:20:21.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00112",
+        "failure_reason": "authentication_required"
+      },
+      "created_at": "2026-05-10T08:20:18.224Z"
+    },
+    {
+      "id": "txn_test_000014",
+      "amount": 1000,
+      "currency": "usd",
+      "status": "refunded",
+      "customer": {
+        "id": "cus_test_0007",
+        "name": "Internal QA",
+        "email": "internal.qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "4242",
+        "exp_month": 4,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-09T07:33:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-09T07:33:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-09T07:33:22.224Z"
+        },
+        {
+          "type": "refunded",
+          "at": "2026-05-10T07:33:18.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00113"
+      },
+      "created_at": "2026-05-09T07:33:18.224Z"
+    },
+    {
+      "id": "txn_test_000015",
+      "amount": 25000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0001",
+        "name": "Test Customer",
+        "email": "test@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "9995",
+        "exp_month": 3,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-08T07:45:18.224Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-08T07:45:21.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00114",
+        "failure_reason": "card_declined"
+      },
+      "created_at": "2026-05-08T07:45:18.224Z"
+    },
+    {
+      "id": "txn_test_000016",
+      "amount": 2000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0004",
+        "name": "Alice Tester",
+        "email": "alice.tester@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "9995",
+        "exp_month": 11,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-07T07:38:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-07T07:38:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-07T07:38:22.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00115"
+      },
+      "created_at": "2026-05-07T07:38:18.224Z"
+    },
+    {
+      "id": "txn_test_000017",
+      "amount": 1500,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0002",
+        "name": "Demo User",
+        "email": "demo+1@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0005",
+        "exp_month": 12,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-06T08:17:18.224Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-06T08:17:21.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00116",
+        "failure_reason": "card_declined"
+      },
+      "created_at": "2026-05-06T08:17:18.224Z"
+    },
+    {
+      "id": "txn_test_000018",
+      "amount": 2000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0001",
+        "name": "Test Customer",
+        "email": "test@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "9995",
+        "exp_month": 2,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-05T08:18:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-05T08:18:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-05T08:18:22.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00117"
+      },
+      "created_at": "2026-05-05T08:18:18.224Z"
+    },
+    {
+      "id": "txn_test_000019",
+      "amount": 10000,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_test_0007",
+        "name": "Internal QA",
+        "email": "internal.qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0005",
+        "exp_month": 3,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-04T08:12:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-04T08:12:20.224Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-04T08:12:22.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00118"
+      },
+      "created_at": "2026-05-04T08:12:18.224Z"
+    },
+    {
+      "id": "txn_test_000020",
+      "amount": 10000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0006",
+        "name": "Charlie Dev",
+        "email": "charlie.dev@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "4242",
+        "exp_month": 1,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-03T07:54:18.224Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-03T07:54:21.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00119",
+        "failure_reason": "insufficient_funds"
+      },
+      "created_at": "2026-05-03T07:54:18.224Z"
+    },
+    {
+      "id": "txn_test_000021",
+      "amount": 10000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0005",
+        "name": "Bob Sandbox",
+        "email": "bob+sandbox@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0005",
+        "exp_month": 12,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-02T08:32:18.224Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-02T08:32:21.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00120",
+        "failure_reason": "expired_card"
+      },
+      "created_at": "2026-05-02T08:32:18.224Z"
+    },
+    {
+      "id": "txn_test_000022",
+      "amount": 1000,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_test_0001",
+        "name": "Test Customer",
+        "email": "test@example.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "9995",
+        "exp_month": 4,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-01T07:50:18.224Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-01T07:50:21.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00121",
+        "failure_reason": "insufficient_funds"
+      },
+      "created_at": "2026-05-01T07:50:18.224Z"
+    },
+    {
+      "id": "txn_test_000023",
+      "amount": 1500,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_test_0007",
+        "name": "Internal QA",
+        "email": "internal.qa@example.test"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "4242",
+        "exp_month": 1,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-30T07:52:18.224Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-30T07:52:20.224Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00122"
+      },
+      "created_at": "2026-04-30T07:52:18.224Z"
+    }
+  ],
+  "transactions_production": [
+    {
+      "id": "txn_live_000001",
+      "amount": 44250,
+      "currency": "krw",
+      "status": "pending",
+      "customer": {
+        "id": "cus_live_0004",
+        "name": "David Park",
+        "email": "david.park@kakao.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "0078",
+        "exp_month": 5,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-22T08:03:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-22T08:03:20.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00100"
+      },
+      "created_at": "2026-05-22T08:03:18.225Z"
+    },
+    {
+      "id": "txn_live_000002",
+      "amount": 42250,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0010",
+        "name": "Aiko Tanaka",
+        "email": "aiko.tanaka@shop.jp"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "8810",
+        "exp_month": 9,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-21T08:24:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-21T08:24:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-21T08:24:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00101"
+      },
+      "created_at": "2026-05-21T08:24:18.225Z"
+    },
+    {
+      "id": "txn_live_000003",
+      "amount": 6900,
+      "currency": "usd",
+      "status": "refunded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "4519",
+        "exp_month": 12,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-20T08:32:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-20T08:32:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-20T08:32:22.225Z"
+        },
+        {
+          "type": "refunded",
+          "at": "2026-05-21T08:32:18.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00102"
+      },
+      "created_at": "2026-05-20T08:32:18.225Z"
+    },
+    {
+      "id": "txn_live_000004",
+      "amount": 17900,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0012",
+        "name": "Priya Sharma",
+        "email": "priya.sharma@studio.in"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "0078",
+        "exp_month": 2,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-19T08:01:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-19T08:01:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-19T08:01:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00103"
+      },
+      "created_at": "2026-05-19T08:01:18.225Z"
+    },
+    {
+      "id": "txn_live_000005",
+      "amount": 4150,
+      "currency": "gbp",
+      "status": "refunded",
+      "customer": {
+        "id": "cus_live_0010",
+        "name": "Aiko Tanaka",
+        "email": "aiko.tanaka@shop.jp"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "9012",
+        "exp_month": 3,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-18T08:01:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-18T08:01:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-18T08:01:22.225Z"
+        },
+        {
+          "type": "refunded",
+          "at": "2026-05-19T08:01:18.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00104"
+      },
+      "created_at": "2026-05-18T08:01:18.225Z"
+    },
+    {
+      "id": "txn_live_000006",
+      "amount": 22800,
+      "currency": "gbp",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0010",
+        "name": "Aiko Tanaka",
+        "email": "aiko.tanaka@shop.jp"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "3344",
+        "exp_month": 9,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-17T08:28:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-17T08:28:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-17T08:28:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00105"
+      },
+      "created_at": "2026-05-17T08:28:18.225Z"
+    },
+    {
+      "id": "txn_live_000007",
+      "amount": 42950,
+      "currency": "krw",
+      "status": "failed",
+      "customer": {
+        "id": "cus_live_0008",
+        "name": "Jiwoo Han",
+        "email": "jiwoo.han@naver.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "4519",
+        "exp_month": 4,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-16T08:00:18.225Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-16T08:00:21.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00106",
+        "failure_reason": "authentication_required"
+      },
+      "created_at": "2026-05-16T08:00:18.225Z"
+    },
+    {
+      "id": "txn_live_000008",
+      "amount": 16150,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0005",
+        "name": "Emma Müller",
+        "email": "emma.m@firma.de"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "9012",
+        "exp_month": 11,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-15T07:45:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-15T07:45:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-15T07:45:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00107"
+      },
+      "created_at": "2026-05-15T07:45:18.225Z"
+    },
+    {
+      "id": "txn_live_000009",
+      "amount": 36150,
+      "currency": "gbp",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0003",
+        "name": "Sofia Rossi",
+        "email": "sofia.rossi@studio.it"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "6611",
+        "exp_month": 4,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-14T08:20:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-14T08:20:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-14T08:20:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00108"
+      },
+      "created_at": "2026-05-14T08:20:18.225Z"
+    },
+    {
+      "id": "txn_live_000010",
+      "amount": 8850,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "3344",
+        "exp_month": 6,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-13T08:09:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-13T08:09:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-13T08:09:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00109"
+      },
+      "created_at": "2026-05-13T08:09:18.225Z"
+    },
+    {
+      "id": "txn_live_000011",
+      "amount": 4750,
+      "currency": "krw",
+      "status": "failed",
+      "customer": {
+        "id": "cus_live_0006",
+        "name": "Olivia Smith",
+        "email": "olivia@designhouse.co"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "2204",
+        "exp_month": 9,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-12T08:31:18.225Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-05-12T08:31:21.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00110",
+        "failure_reason": "expired_card"
+      },
+      "created_at": "2026-05-12T08:31:18.225Z"
+    },
+    {
+      "id": "txn_live_000012",
+      "amount": 9900,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0004",
+        "name": "David Park",
+        "email": "david.park@kakao.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "4519",
+        "exp_month": 8,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-11T07:34:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-11T07:34:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-11T07:34:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00111"
+      },
+      "created_at": "2026-05-11T07:34:18.225Z"
+    },
+    {
+      "id": "txn_live_000013",
+      "amount": 26350,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0012",
+        "name": "Priya Sharma",
+        "email": "priya.sharma@studio.in"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "6611",
+        "exp_month": 6,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-10T07:42:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-10T07:42:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-10T07:42:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00112"
+      },
+      "created_at": "2026-05-10T07:42:18.225Z"
+    },
+    {
+      "id": "txn_live_000014",
+      "amount": 29600,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0011",
+        "name": "Carlos Ramirez",
+        "email": "cramirez@tienda.es"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "2204",
+        "exp_month": 7,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-09T07:58:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-09T07:58:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-09T07:58:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00113"
+      },
+      "created_at": "2026-05-09T07:58:18.225Z"
+    },
+    {
+      "id": "txn_live_000015",
+      "amount": 10700,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0011",
+        "name": "Carlos Ramirez",
+        "email": "cramirez@tienda.es"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0078",
+        "exp_month": 10,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-08T08:17:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-08T08:17:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-08T08:17:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00114"
+      },
+      "created_at": "2026-05-08T08:17:18.225Z"
+    },
+    {
+      "id": "txn_live_000016",
+      "amount": 16250,
+      "currency": "krw",
+      "status": "refunded",
+      "customer": {
+        "id": "cus_live_0003",
+        "name": "Sofia Rossi",
+        "email": "sofia.rossi@studio.it"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "8810",
+        "exp_month": 5,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-07T07:38:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-07T07:38:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-07T07:38:22.225Z"
+        },
+        {
+          "type": "refunded",
+          "at": "2026-05-08T07:38:18.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00115"
+      },
+      "created_at": "2026-05-07T07:38:18.225Z"
+    },
+    {
+      "id": "txn_live_000017",
+      "amount": 45600,
+      "currency": "jpy",
+      "status": "pending",
+      "customer": {
+        "id": "cus_live_0011",
+        "name": "Carlos Ramirez",
+        "email": "cramirez@tienda.es"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0078",
+        "exp_month": 11,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-06T08:00:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-06T08:00:20.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00116"
+      },
+      "created_at": "2026-05-06T08:00:18.225Z"
+    },
+    {
+      "id": "txn_live_000018",
+      "amount": 45600,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0004",
+        "name": "David Park",
+        "email": "david.park@kakao.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "8810",
+        "exp_month": 11,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-05T08:16:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-05T08:16:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-05T08:16:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00117"
+      },
+      "created_at": "2026-05-05T08:16:18.225Z"
+    },
+    {
+      "id": "txn_live_000019",
+      "amount": 29900,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "6611",
+        "exp_month": 11,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-04T08:10:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-04T08:10:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-04T08:10:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00118"
+      },
+      "created_at": "2026-05-04T08:10:18.225Z"
+    },
+    {
+      "id": "txn_live_000020",
+      "amount": 28050,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_live_0009",
+        "name": "Lucas Bernard",
+        "email": "lucas.b@maison.fr"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "2204",
+        "exp_month": 5,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-03T08:09:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-03T08:09:20.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00119"
+      },
+      "created_at": "2026-05-03T08:09:18.225Z"
+    },
+    {
+      "id": "txn_live_000021",
+      "amount": 5050,
+      "currency": "jpy",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0009",
+        "name": "Lucas Bernard",
+        "email": "lucas.b@maison.fr"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "6611",
+        "exp_month": 4,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-02T08:32:18.225Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-02T08:32:20.225Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-02T08:32:22.225Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00120"
+      },
+      "created_at": "2026-05-02T08:32:18.225Z"
+    },
+    {
+      "id": "txn_live_000022",
+      "amount": 25500,
+      "currency": "usd",
+      "status": "refunded",
+      "customer": {
+        "id": "cus_live_0002",
+        "name": "Michael Chen",
+        "email": "mchen@acme.co"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0078",
+        "exp_month": 7,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-05-01T08:11:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-05-01T08:11:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-05-01T08:11:22.226Z"
+        },
+        {
+          "type": "refunded",
+          "at": "2026-05-02T08:11:18.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00121"
+      },
+      "created_at": "2026-05-01T08:11:18.226Z"
+    },
+    {
+      "id": "txn_live_000023",
+      "amount": 2800,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0008",
+        "name": "Jiwoo Han",
+        "email": "jiwoo.han@naver.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "2204",
+        "exp_month": 7,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-30T07:43:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-30T07:43:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-30T07:43:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00122"
+      },
+      "created_at": "2026-04-30T07:43:18.226Z"
+    },
+    {
+      "id": "txn_live_000024",
+      "amount": 23350,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0006",
+        "name": "Olivia Smith",
+        "email": "olivia@designhouse.co"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "4519",
+        "exp_month": 1,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-29T07:53:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-29T07:53:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-29T07:53:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00123"
+      },
+      "created_at": "2026-04-29T07:53:18.226Z"
+    },
+    {
+      "id": "txn_live_000025",
+      "amount": 47250,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_live_0003",
+        "name": "Sofia Rossi",
+        "email": "sofia.rossi@studio.it"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "8810",
+        "exp_month": 7,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-28T08:07:18.226Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-04-28T08:07:21.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00124",
+        "failure_reason": "insufficient_funds"
+      },
+      "created_at": "2026-04-28T08:07:18.226Z"
+    },
+    {
+      "id": "txn_live_000026",
+      "amount": 24450,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0007",
+        "name": "Noah Williams",
+        "email": "noah.w@studio.io"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "8810",
+        "exp_month": 1,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-27T07:46:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-27T07:46:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-27T07:46:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00125"
+      },
+      "created_at": "2026-04-27T07:46:18.226Z"
+    },
+    {
+      "id": "txn_live_000027",
+      "amount": 1350,
+      "currency": "eur",
+      "status": "failed",
+      "customer": {
+        "id": "cus_live_0002",
+        "name": "Michael Chen",
+        "email": "mchen@acme.co"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "8810",
+        "exp_month": 3,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-26T07:34:18.226Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-04-26T07:34:21.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00126",
+        "failure_reason": "card_declined"
+      },
+      "created_at": "2026-04-26T07:34:18.226Z"
+    },
+    {
+      "id": "txn_live_000028",
+      "amount": 38850,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0007",
+        "name": "Noah Williams",
+        "email": "noah.w@studio.io"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0078",
+        "exp_month": 10,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-25T08:01:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-25T08:01:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-25T08:01:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00127"
+      },
+      "created_at": "2026-04-25T08:01:18.226Z"
+    },
+    {
+      "id": "txn_live_000029",
+      "amount": 24650,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0008",
+        "name": "Jiwoo Han",
+        "email": "jiwoo.han@naver.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "4519",
+        "exp_month": 5,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-24T07:37:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-24T07:37:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-24T07:37:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00128"
+      },
+      "created_at": "2026-04-24T07:37:18.226Z"
+    },
+    {
+      "id": "txn_live_000030",
+      "amount": 13150,
+      "currency": "usd",
+      "status": "failed",
+      "customer": {
+        "id": "cus_live_0009",
+        "name": "Lucas Bernard",
+        "email": "lucas.b@maison.fr"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "3344",
+        "exp_month": 7,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-23T07:48:18.226Z"
+        },
+        {
+          "type": "authorization_failed",
+          "at": "2026-04-23T07:48:21.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00129",
+        "failure_reason": "authentication_required"
+      },
+      "created_at": "2026-04-23T07:48:18.226Z"
+    },
+    {
+      "id": "txn_live_000031",
+      "amount": 19100,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0010",
+        "name": "Aiko Tanaka",
+        "email": "aiko.tanaka@shop.jp"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "0078",
+        "exp_month": 9,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-22T08:00:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-22T08:00:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-22T08:00:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00130"
+      },
+      "created_at": "2026-04-22T08:00:18.226Z"
+    },
+    {
+      "id": "txn_live_000032",
+      "amount": 33750,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0002",
+        "name": "Michael Chen",
+        "email": "mchen@acme.co"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "8810",
+        "exp_month": 4,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-21T08:27:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-21T08:27:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-21T08:27:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00131"
+      },
+      "created_at": "2026-04-21T08:27:18.226Z"
+    },
+    {
+      "id": "txn_live_000033",
+      "amount": 7200,
+      "currency": "krw",
+      "status": "pending",
+      "customer": {
+        "id": "cus_live_0012",
+        "name": "Priya Sharma",
+        "email": "priya.sharma@studio.in"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "4519",
+        "exp_month": 4,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-20T08:17:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-20T08:17:20.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00132"
+      },
+      "created_at": "2026-04-20T08:17:18.226Z"
+    },
+    {
+      "id": "txn_live_000034",
+      "amount": 19500,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0007",
+        "name": "Noah Williams",
+        "email": "noah.w@studio.io"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "0078",
+        "exp_month": 10,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-19T08:13:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-19T08:13:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-19T08:13:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00133"
+      },
+      "created_at": "2026-04-19T08:13:18.226Z"
+    },
+    {
+      "id": "txn_live_000035",
+      "amount": 16000,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "visa",
+        "last4": "6611",
+        "exp_month": 10,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-18T08:19:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-18T08:19:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-18T08:19:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00134"
+      },
+      "created_at": "2026-04-18T08:19:18.226Z"
+    },
+    {
+      "id": "txn_live_000036",
+      "amount": 42550,
+      "currency": "usd",
+      "status": "pending",
+      "customer": {
+        "id": "cus_live_0005",
+        "name": "Emma Müller",
+        "email": "emma.m@firma.de"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "8810",
+        "exp_month": 6,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-17T08:21:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-17T08:21:20.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00135"
+      },
+      "created_at": "2026-04-17T08:21:18.226Z"
+    },
+    {
+      "id": "txn_live_000037",
+      "amount": 29300,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0007",
+        "name": "Noah Williams",
+        "email": "noah.w@studio.io"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "0078",
+        "exp_month": 12,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-16T08:23:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-16T08:23:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-16T08:23:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00136"
+      },
+      "created_at": "2026-04-16T08:23:18.226Z"
+    },
+    {
+      "id": "txn_live_000038",
+      "amount": 36950,
+      "currency": "jpy",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0011",
+        "name": "Carlos Ramirez",
+        "email": "cramirez@tienda.es"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "8810",
+        "exp_month": 8,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-15T08:09:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-15T08:09:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-15T08:09:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00137"
+      },
+      "created_at": "2026-04-15T08:09:18.226Z"
+    },
+    {
+      "id": "txn_live_000039",
+      "amount": 6950,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "9012",
+        "exp_month": 9,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-14T08:19:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-14T08:19:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-14T08:19:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00138"
+      },
+      "created_at": "2026-04-14T08:19:18.226Z"
+    },
+    {
+      "id": "txn_live_000040",
+      "amount": 10200,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "8810",
+        "exp_month": 4,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-13T07:53:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-13T07:53:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-13T07:53:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00139"
+      },
+      "created_at": "2026-04-13T07:53:18.226Z"
+    },
+    {
+      "id": "txn_live_000041",
+      "amount": 19750,
+      "currency": "usd",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0012",
+        "name": "Priya Sharma",
+        "email": "priya.sharma@studio.in"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "3344",
+        "exp_month": 3,
+        "exp_year": 2029
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-12T08:23:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-12T08:23:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-12T08:23:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00140"
+      },
+      "created_at": "2026-04-12T08:23:18.226Z"
+    },
+    {
+      "id": "txn_live_000042",
+      "amount": 34450,
+      "currency": "eur",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0010",
+        "name": "Aiko Tanaka",
+        "email": "aiko.tanaka@shop.jp"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "9012",
+        "exp_month": 5,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-11T07:33:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-11T07:33:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-11T07:33:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00141"
+      },
+      "created_at": "2026-04-11T07:33:18.226Z"
+    },
+    {
+      "id": "txn_live_000043",
+      "amount": 35700,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0004",
+        "name": "David Park",
+        "email": "david.park@kakao.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "4519",
+        "exp_month": 6,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-10T08:29:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-10T08:29:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-10T08:29:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00142"
+      },
+      "created_at": "2026-04-10T08:29:18.226Z"
+    },
+    {
+      "id": "txn_live_000044",
+      "amount": 33700,
+      "currency": "jpy",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0012",
+        "name": "Priya Sharma",
+        "email": "priya.sharma@studio.in"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "amex",
+        "last4": "3344",
+        "exp_month": 4,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-09T08:28:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-09T08:28:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-09T08:28:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00143"
+      },
+      "created_at": "2026-04-09T08:28:18.226Z"
+    },
+    {
+      "id": "txn_live_000045",
+      "amount": 4500,
+      "currency": "jpy",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0006",
+        "name": "Olivia Smith",
+        "email": "olivia@designhouse.co"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "9012",
+        "exp_month": 6,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-08T08:22:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-08T08:22:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-08T08:22:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00144"
+      },
+      "created_at": "2026-04-08T08:22:18.226Z"
+    },
+    {
+      "id": "txn_live_000046",
+      "amount": 38150,
+      "currency": "krw",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0001",
+        "name": "Hannah Lee",
+        "email": "hannah.lee@gmail.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "4519",
+        "exp_month": 9,
+        "exp_year": 2027
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-07T08:00:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-07T08:00:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-07T08:00:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00145"
+      },
+      "created_at": "2026-04-07T08:00:18.226Z"
+    },
+    {
+      "id": "txn_live_000047",
+      "amount": 26800,
+      "currency": "gbp",
+      "status": "succeeded",
+      "customer": {
+        "id": "cus_live_0004",
+        "name": "David Park",
+        "email": "david.park@kakao.com"
+      },
+      "payment_method": {
+        "type": "card",
+        "brand": "mastercard",
+        "last4": "2204",
+        "exp_month": 8,
+        "exp_year": 2028
+      },
+      "events": [
+        {
+          "type": "created",
+          "at": "2026-04-06T08:19:18.226Z"
+        },
+        {
+          "type": "authorized",
+          "at": "2026-04-06T08:19:20.226Z"
+        },
+        {
+          "type": "captured",
+          "at": "2026-04-06T08:19:22.226Z"
+        }
+      ],
+      "metadata": {
+        "order_id": "ord_00146"
+      },
+      "created_at": "2026-04-06T08:19:18.226Z"
+    }
+  ]
+}
