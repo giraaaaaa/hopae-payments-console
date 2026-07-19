@@ -1,15 +1,8 @@
-import { createContext, useCallback, useContext, useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { Navigate, useLocation } from 'react-router-dom'
 import { session, type SessionUser } from '../api/client'
 import { login as loginRequest } from '../api/auth'
-
-interface AuthState {
-  user: SessionUser | null
-  login: (email: string, password: string) => Promise<void>
-  logout: () => void
-}
-
-const AuthContext = createContext<AuthState | null>(null)
+import { AuthContext, useAuth } from './useAuth'
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Session is read from localStorage once; the token survives reloads.
@@ -30,12 +23,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const value = useMemo(() => ({ user, login, logout }), [user, login, logout])
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
-}
-
-export function useAuth(): AuthState {
-  const ctx = useContext(AuthContext)
-  if (!ctx) throw new Error('useAuth must be used within AuthProvider')
-  return ctx
 }
 
 /** Route guard: unauthenticated visits bounce to /login (remembering where they came from). */

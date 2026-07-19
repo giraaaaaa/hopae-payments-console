@@ -1,6 +1,6 @@
 import { Navigate, Outlet, useLocation, useNavigate, useParams } from 'react-router-dom'
 import { ENVS, isEnv, type Env } from '../api/transactions'
-import { useAuth } from '../auth/AuthContext'
+import { useAuth } from '../auth/useAuth'
 
 /**
  * Console chrome: sandbox test-data banner, header with nav + env switcher.

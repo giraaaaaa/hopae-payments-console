@@ -7,7 +7,7 @@ import {
 } from '../api/transactions'
 import { ApiError } from '../api/client'
 import { formatAmount } from '../lib/money'
-import { useToast } from '../components/Toast'
+import { useToast } from '../components/useToast'
 import { StatusBadge } from './StatusBadge'
 import { patchTransactionInLists } from './useTransactionList'
 

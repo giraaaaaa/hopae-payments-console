@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Navigate, useLocation, useNavigate, useSearchParams } from 'react-router-dom'
 import { ApiError } from '../api/client'
-import { useAuth } from './AuthContext'
+import { useAuth } from './useAuth'
 
 export default function LoginPage() {
   const { user, login } = useAuth()

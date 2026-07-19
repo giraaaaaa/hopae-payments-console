@@ -1,6 +1,5 @@
-import { createContext, useCallback, useContext, useRef, useState } from 'react'
-
-export type ToastKind = 'success' | 'error' | 'info'
+import { useCallback, useRef, useState } from 'react'
+import { ToastContext, type PushToast, type ToastKind } from './useToast'
 
 interface Toast {
   id: number
@@ -8,10 +7,6 @@ interface Toast {
   title: string
   detail?: string
 }
-
-type PushToast = (kind: ToastKind, title: string, detail?: string) => void
-
-const ToastContext = createContext<PushToast | null>(null)
 
 const KIND_STYLES: Record<ToastKind, string> = {
   success: 'border-emerald-300 bg-emerald-50 text-emerald-900',
@@ -50,10 +45,4 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
       </div>
     </ToastContext.Provider>
   )
-}
-
-export function useToast(): PushToast {
-  const push = useContext(ToastContext)
-  if (!push) throw new Error('useToast must be used within ToastProvider')
-  return push
 }
