@@ -27,7 +27,7 @@ export default function ConsoleLayout() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 pb-16 md:pb-0">
+    <div className="min-h-screen bg-slate-50 pb-16 sm:pb-0">
       <header className="border-b border-slate-200 bg-white">
         {env === 'sandbox' && (
           <div className="bg-amber-400 px-4 py-1.5 text-center text-xs font-semibold text-amber-950">
@@ -43,8 +43,9 @@ export default function ConsoleLayout() {
             <span className="text-sm font-bold tracking-tight text-slate-900">Hopae Payments</span>
           </div>
 
-          {/* Nav duplicates the page title on mobile — desktop only. */}
-          <nav className="hidden items-center gap-4 text-sm md:flex">
+          {/* Kept visible down to phone width; below that it moves to the
+              bottom tab bar rather than disappearing. */}
+          <nav className="hidden items-center gap-4 text-sm sm:flex">
             <span className="font-semibold text-slate-900">Transactions</span>
             {['Customers', 'Payouts', 'Developers'].map((item) => (
               <span
@@ -108,7 +109,7 @@ export default function ConsoleLayout() {
           wireframe chrome, muted. */}
       <nav
         aria-label="Primary"
-        className="fixed inset-x-0 bottom-0 z-30 flex border-t border-slate-200 bg-white pb-[env(safe-area-inset-bottom)] md:hidden"
+        className="fixed inset-x-0 bottom-0 z-30 flex border-t border-slate-200 bg-white pb-[env(safe-area-inset-bottom)] sm:hidden"
       >
         <span aria-current="page" className="flex flex-1 flex-col items-center gap-0.5 pb-1.5 pt-2 text-slate-900">
           <TabIcon path="M4 6h16M4 10h16M4 14h10M4 18h6" />
