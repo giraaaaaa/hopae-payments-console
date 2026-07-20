@@ -75,16 +75,16 @@ export function TransactionTable({ rows, now, onRefund, resetKey, ready }: Props
   return (
     // min-w keeps columns readable on small screens — the wrapper provides
     // horizontal scroll instead of letting cells crush into each other.
-    <table className="w-full min-w-[880px] table-fixed text-sm">
+    <table className="w-full min-w-[1100px] table-fixed text-sm">
       <thead>
         <tr className="border-b border-slate-200 text-left text-xs font-semibold uppercase tracking-wide text-slate-500">
-          <th className="w-[19%] px-4 py-3">Transaction</th>
-          <th className="w-[14%] px-4 py-3">Amount</th>
-          <th className="w-[12%] px-4 py-3">Status</th>
-          <th className="w-[22%] px-4 py-3">Customer</th>
-          <th className="w-[13%] px-4 py-3">Payment</th>
-          <th className="w-[12%] px-4 py-3">Created</th>
-          <th className="w-[8%] px-4 py-3 text-right">
+          <th className="w-[17%] px-5 py-3.5">Transaction</th>
+          <th className="w-[13%] px-5 py-3.5">Amount</th>
+          <th className="w-[14%] px-5 py-3.5">Status</th>
+          <th className="w-[21%] px-5 py-3.5">Customer</th>
+          <th className="w-[13%] px-5 py-3.5">Payment</th>
+          <th className="w-[13%] px-5 py-3.5">Created</th>
+          <th className="w-[9%] px-4 py-3.5 text-right">
             <span className="sr-only">Actions</span>
           </th>
         </tr>
@@ -97,16 +97,16 @@ export function TransactionTable({ rows, now, onRefund, resetKey, ready }: Props
               flashed.has(row.id) ? 'row-flash' : ''
             }`}
           >
-            <td className="truncate px-4 py-3 font-mono text-xs text-slate-700" title={row.id}>
+            <td className="truncate px-5 py-4 font-mono text-xs text-slate-700" title={row.id}>
               {row.id}
             </td>
-            <td className="px-4 py-3">
-              <span className="font-medium tabular-nums text-slate-900">
+            <td className="px-5 py-4">
+              <span className="whitespace-nowrap font-medium tabular-nums text-slate-900">
                 {formatAmount(row.amount, row.currency)}
               </span>{' '}
               <span className="text-xs uppercase text-slate-500">{row.currency}</span>
             </td>
-            <td className="px-4 py-3">
+            <td className="px-5 py-4">
               <StatusBadge status={row.status} />
               {row.status === 'failed' && row.failure_reason && (
                 <p className="mt-1 text-xs text-red-600">
@@ -119,15 +119,15 @@ export function TransactionTable({ rows, now, onRefund, resetKey, ready }: Props
                 </p>
               )}
             </td>
-            <td className="px-4 py-3">
+            <td className="px-5 py-4">
               <p className="truncate font-medium text-slate-800">{row.customer.name}</p>
               <p className="truncate text-xs text-slate-500">{row.customer.email}</p>
             </td>
-            <td className="px-4 py-3 text-xs text-slate-500">
+            <td className="px-5 py-4 text-xs text-slate-500">
               <span className="capitalize">{row.payment_method.brand}</span>{' '}
-              <span className="font-mono">•••• {row.payment_method.last4}</span>
+              <span className="whitespace-nowrap font-mono">•••• {row.payment_method.last4}</span>
             </td>
-            <td className="px-4 py-3" title={formatAbsoluteTime(row.created_at)}>
+            <td className="px-5 py-4" title={formatAbsoluteTime(row.created_at)}>
               <p className="whitespace-nowrap text-xs text-slate-600">
                 {formatRelativeTime(row.created_at, now)}
               </p>
@@ -135,7 +135,7 @@ export function TransactionTable({ rows, now, onRefund, resetKey, ready }: Props
                 {formatShortDateTime(row.created_at, now)}
               </p>
             </td>
-            <td className="px-4 py-3 text-right">
+            <td className="px-4 py-4 text-right">
               {row.status === 'succeeded' && (
                 <button
                   type="button"
